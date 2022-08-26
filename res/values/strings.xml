@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Ситипринт</string>
+    <string name="test_repo">Warehouse</string>
+    <string name="login">Имя пользователя</string>
+    <string name="logo">Logo</string>
+    <string name="password">Пароль</string>
+    <string name="button_login">Вход</string>
+    <string name="login_toolbar">Вход</string>
+    <string name="about">О программе</string>
+    <string name="title_activity_modules">ModulesActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="login_toolbar_modules">Модули</string>
+    <string name="toolbar_category">Категории</string>
+    <string name="products">Прием товара</string>
+    <string name="production">Передача в производство</string>
+    <string name="stock">Остатки товара на складе</string>
+    <string name="inventory">Инвентаризация</string>
+    <string name="close">close</string>
+
+    //dialog rb
+
+    <string name="title">"Номенклатура"</string>
+    <string name="choose">"Да"</string>
+    <string name="negative">"Отмена"</string>
+
+    //dialog send to server
+
+    <string name="titleS">"Ошибка выгрузки"</string>
+    <string name="contentS"></string>
+    <string name="agreeS">"Да"</string>
+
+
+    //dialog input
+    <string name="input">"Добавление номенклатуры:"</string>
+    <string name="input_content">"наименование"</string>
+    <string name="input_name">"наименование"</string>
+    <string name="input_width">"ширина"</string>
+    <string name="input_height">"высота"</string>
+    <string name="input_length">"длина"</string>
+    <string name="input_barcode">"Barcode"</string>
+    <string name="input_measure">"ед.изм."</string>
+    <string name="agree">"Да"</string>
+    <string name="disagree">"Отмена"</string>
+
+
+    //dialog quantity
+    <string name="qtitle">Редактирование строки</string>
+    <string name="qinput_content">Укажите количество принимаемого товара</string>
+    <string name="qchoose">Сохранить</string>
+    <string name="qnegative">Отмена</string>
+    <string name="qinput_hint">0</string>
+    <string name="qinput_prefill">""</string>
+
+    // dialog MaterialDialog - Load Data
+    <string name="data_load_title">Обновление</string>
+    <string name="data_load_content">Выполняется обновление БД</string>
+
+    <string-array name="content_options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_stock">Остатки</string>
+    <string name="back">back</string>
+    <string name="name">наименование</string>
+    <string name="width">ширина</string>
+    <string name="height">высота</string>
+    <string name="height_stock">Высота</string>
+    <string name="lenght_stock">Длина</string>
+    <string name="metka">Метка</string>
+    <string name="quantity_stock">Количество:</string>
+    <string name="width_stock">Ширина</string>
+    <string name="dialog_link_barcode_text">Привязать штрих-код</string>
+    <string name="dialog_link_barcode_item">к</string>
+
+    <!-- Названия параметров настроек приложения -->
+    <string name="pref_settings_name">Настройки</string>
+    <string name="pref_service_api_url">URL Service API</string>
+    <string name="pref_service_api_desc">URL сервиса API</string>
+    <string name="title_activity_acceptance">Прием товара, накладные</string>
+    <string name="title_activity_acceptance_edit">AcceptanceEditActivity</string>
+    <string name="lenght">Длина</string>
+    <string name="hight">Высота</string>
+    <string name="widthw">Ширина</string>
+    <string name="nameedit">Наименование</string>
+    <string name="ed">Ед. изм.</string>
+    <string name="barcodeedit">Штрих-код</string>
+</resources>

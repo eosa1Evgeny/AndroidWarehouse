@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorError">#FF40FF</color>
+    <color name="colorLaunch">#555C79</color>
+    <color name="colorToolbar">#555c79</color>
+
+    <color name="colorToolbar2">#555c79</color>
+
+    <color name="colorToolbar3">#555C79</color>
+
+    <color name="colorBtnLogin">#1EB5EF</color>
+    <color name="colorBtnMenu">#1A2863</color>
+    <color name="colorToolbarProduct">#555c79</color>
+    <color name="colorFab">#FC9A5F</color>
+    <color name="metka">#aaaaaa</color>
+    <color name="metka2">#f0f3f1</color>
+
+</resources>

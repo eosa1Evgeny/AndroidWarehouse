@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- этот слой нужен для Snackbar   -->
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.StockActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main_inv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbarProduct"
+            android:gravity="center_vertical|center_horizontal"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingStart="50dp"
+            android:theme="?attr/actionBarTheme"
+            app:headerLayout="@layout/nav_header_modules"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <ImageButton
+            android:id="@+id/image_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/navigationBarColor"
+            android:contentDescription="@string/back"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar_main_inv"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar_main_inv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <ImageButton
+            android:id="@+id/image_button_barcode"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/navigationBarColor"
+            android:contentDescription="@string/back"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/toolbar_main_inv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/barcode" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="280dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_vertical|center"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_main_inv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toEndOf="@+id/image_button_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_main_inv">
+
+            <LinearLayout
+                android:id="@+id/linear_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lenght"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center|start"
+                    android:paddingStart="10dp"
+                    android:text="@string/lenght_stock"
+                    android:textSize="18sp"
+                    tools:text="Длина" />
+
+                <TextView
+                    android:id="@+id/lenght_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center|end"
+                    android:textSize="18sp"
+                    tools:text="Value" />
+
+                <TextView
+                    android:id="@+id/measure1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|end"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp"
+                    tools:text="Measure" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center|start"
+                    android:paddingStart="10dp"
+                    android:text="@string/width_stock"
+                    android:textSize="18sp"
+                    tools:text="Ширина" />
+
+                <TextView
+                    android:id="@+id/width_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center|end"
+                    android:textSize="18sp"
+                    tools:text="Value" />
+
+                <TextView
+                    android:id="@+id/measure2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|end"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp"
+                    tools:text="Measure" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center|start"
+                    android:paddingStart="10dp"
+                    android:text="@string/height_stock"
+                    android:textSize="18sp"
+                    tools:text="Высота" />
+
+                <TextView
+                    android:id="@+id/height_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center|end"
+                    android:textSize="18sp"
+                    tools:text="Value" />
+
+                <TextView
+                    android:id="@+id/measure3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|end"
+                    android:paddingEnd="10dp"
+                    android:textSize="18sp"
+                    tools:text="Measure" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/metka2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:paddingStart="10dp"
+                    android:text="@string/metka"
+                    android:textSize="18sp"
+                    tools:text="Метка" />
+
+                <TextView
+                    android:id="@+id/stock_items_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:paddingEnd="10dp"
+                    android:text="@string/quantity_stock"
+                    android:textSize="18sp"
+                    tools:text="Количество" />
+            </LinearLayout>
+
+           <!-- &lt;!&ndash; Footer aligned to bottom &ndash;&gt;
+            <TextView
+                android:id="@+id/stock_items_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:text="Итого количество: "
+                android:background="@color/colorLaunch"
+                android:textColor="#fff"
+                android:textSize="20sp" />-->
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#90909090"
+            app:layout_constraintTop_toBottomOf="@+id/main_linear" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/info_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_linear">
+
+        </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

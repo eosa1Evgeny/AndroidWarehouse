@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // диалог выбора добавления товаров (Прием товара)
+    <string-array name="products_select_names">
+        <item>Из списка товаров</item>
+        <item>Ввести вручную</item>
+    </string-array>
+
+    // диалог выбора добавления товаров (Передача в производство)
+    <string-array name="production_select_names">
+        <item>Из списка товаров</item>
+    </string-array>
+
+</resources>

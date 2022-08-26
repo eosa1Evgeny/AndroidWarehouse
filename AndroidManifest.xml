@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.cityprint.arm.warehouse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".barcode.CoreApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:parentActivityName=".ui.LaunchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ModulesActivity"
+            android:label="@string/title_activity_modules"
+            android:parentActivityName=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/pref_settings_name"
+            android:parentActivityName=".ui.ModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.AcceptanceDetailsActivity"
+            android:parentActivityName=".ui.AcceptanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.ProductionActivity"
+            android:label="@string/production"
+            android:parentActivityName=".ui.ModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.StockActivity"
+            android:label="@string/title_activity_stock"
+            android:parentActivityName=".ui.ModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.StockInfoActivity"
+            android:label="@string/title_activity_stock"
+            android:parentActivityName=".ui.StockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.StockInfoBarcodesActivity"
+            android:parentActivityName=".ui.StockInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.InventoryActivity"
+            android:parentActivityName=".ui.ModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.AcceptanceActivity"
+            android:label="@string/title_activity_acceptance"
+            android:parentActivityName=".ui.ModulesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ru.cityprint.arm.warehouse.ui.ModulesActivity" />
+        </activity>
+    </application>
+
+</manifest>
